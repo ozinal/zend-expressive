@@ -27,4 +27,6 @@
  */
 
 $app->get('/', App\Action\HomePageAction::class, 'home');
+$app->get('/category[/{action:view/search/edit/add}[/{id}]]', App\Action\CategoryAction::class, 'category');
+$app->get('/product[/{action:view/edit/add}[/{id}]]', App\Action\ProductAction::class, 'product');
 $app->get('/api/ping', App\Action\PingAction::class, 'api.ping');

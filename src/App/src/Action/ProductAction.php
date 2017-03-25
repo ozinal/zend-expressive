@@ -7,7 +7,7 @@ use Interop\Http\ServerMiddleware\MiddlewareInterface as ServerMiddlewareInterfa
 use Zend\Diactoros\Response\JsonResponse;
 use Psr\Http\Message\ServerRequestInterface;
 
-class PingAction implements ServerMiddlewareInterface
+class ProductAction implements ServerMiddlewareInterface
 {
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
